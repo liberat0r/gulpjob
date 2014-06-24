@@ -28,6 +28,6 @@ If you would like to receive notifications from gulp-notify, you must install sn
 TODO
 ------
 
-* Move dependencies to package.json
+* ~~Move dependencies to package.json~~
 * Modularize each task in external file
 * Add image-min support
