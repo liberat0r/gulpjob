@@ -23,6 +23,8 @@ npm install gulp-rename
 npm install gulp-clean
 ```
 
+If you would like to receive notifications from gulp-notify, you must install snarl.
+
 TODO
 ------
 
