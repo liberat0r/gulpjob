@@ -10,12 +10,15 @@ You need to have a node-enabled environment and be able to access the node packe
 
 - Run the install.bat windows batch file
 - With npm added to your PATH environmental variables, run the following commands:
-	npm install gulp
-	npm install gulp-uglifyjs
-	npm install gulp-concat-sourcemap
-	npm install gulp-autoprefixer
-	npm install gulp-minify-css
-	npm install gulp-compass
-	npm install gulp-notify
-	npm install gulp-rename
-	npm install gulp-clean
+
+```
+npm install gulp
+npm install gulp-uglifyjs
+npm install gulp-concat-sourcemap
+npm install gulp-autoprefixer
+npm install gulp-minify-css
+npm install gulp-compass
+npm install gulp-notify
+npm install gulp-rename
+npm install gulp-clean
+```
