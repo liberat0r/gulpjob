@@ -29,5 +29,6 @@ TODO
 ------
 
 * ~~Move dependencies to package.json~~
+* watcher on change event not working
 * Modularize each task in external file
 * Add image-min support
