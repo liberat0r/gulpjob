@@ -22,3 +22,9 @@ npm install gulp-notify
 npm install gulp-rename
 npm install gulp-clean
 ```
+
+#TODO
+
+* Move dependencies to package.json
+* Modularize each task in external file
+* Add image-min support
