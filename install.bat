@@ -1,9 +1,3 @@
-call npm install gulp --save-dev --global
-call npm install gulp-uglifyjs --save-dev --global
-call npm install gulp-concat-sourcemap --save-dev --global
-call npm install gulp-autoprefixer --save-dev --global
-call npm install gulp-minify-css --save-dev --global
-call npm install gulp-compass --save-dev --global
-call npm install gulp-notify --save-dev --global
-call npm install gulp-rename --save-dev --global
-call npm install gulp-clean --save-dev --global
+call npm install gulp --global
+call npm install gulp gulp-uglifyjs gulp-compass gulp-concat-sourcemap gulp-autoprefixer gulp-minify-css gulp-notify gulp-rename gulp-clean --save-dev
+call gulp -v
