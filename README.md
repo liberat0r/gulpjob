@@ -23,7 +23,8 @@ npm install gulp-rename
 npm install gulp-clean
 ```
 
-#TODO
+TODO
+------
 
 * Move dependencies to package.json
 * Modularize each task in external file
