@@ -2,6 +2,8 @@
 
 var gulp = require('gulp');
 
+var stream = require('event-stream');
+
 var gulpPlugin = {
     uglifyjs: require('gulp-uglifyjs'),
     concat_sourcemap: require('gulp-concat-sourcemap'),
