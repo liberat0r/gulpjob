@@ -3,26 +3,6 @@
 var gulp       = global.gulp        = require('./config/includes').gulp;
 var gulpPlugin = global.gulpPlugin  = require('./config/includes').gulpPlugin;
 
-<<<<<<< HEAD
-var stream = require('event-stream');
-
-var gulpPlugin = {
-    uglifyjs: require('gulp-uglifyjs'),
-    concat_sourcemap: require('gulp-concat-sourcemap'),
-    autoprefixer: require('gulp-autoprefixer'),
-    clean: require('gulp-clean'),
-    rename: require('gulp-rename'),
-    notify: require('gulp-notify'),
-    compass: require('gulp-compass'),
-    minifyCSS: require('gulp-minify-css'),
-};
-=======
->>>>>>> 5ab46babbf24c661bcd66b160f22ca72b76f8227
-/*var gulpPlugin = require("gulp-load-plugins")({
- pattern: ['gulp-*', 'gulp.*'],
- replaceString: /\bgulp[\-.]/
- });*/
-
 // Files & Paths
 var basepath = global.basePaths   = require('./config/paths').basePaths;
 var files    = global.files       = require('./config/paths').files;
