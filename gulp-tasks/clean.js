@@ -1,7 +1,6 @@
 
 /**
  * Clean files that are not needed
- *
  */
 
 var clean = function () {

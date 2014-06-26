@@ -1,12 +1,16 @@
-gulp-automation
-===============
+gulpjob
+=======
 
 Front-end web development automation with node, gulp and compass.
 
-Installation
---------------
+What does it do
+---------------
+Concatenates and minifies __JS__, compiles and compresses __SCSS__, handles __spriting__ with compass, and creates __sourcemaps__ for the above.
 
-You need to have a node-enabled environment and be able to access the node packet management commands. With npm added to your PATH environmental variables, run either of the following commands:
+Installation
+------------
+
+You need [nodeJS](http://nodejs.org/download/) and [ruby compass](http://compass-style.org/install/). With npm added to your PATH environmental variables, run either of the following commands:
 
 - ```npm install```
 - ```install.bat``` windows batch file
@@ -14,10 +18,6 @@ You need to have a node-enabled environment and be able to access the node packe
 
 If you would like to receive notifications from gulp-notify, you must install [snarl](http://fullphat.net/) or [growl](http://growl.info/)
 
-TODO
-------
-
-* ~~Move dependencies to package.json~~
-* Watcher on change event not working
-* ~~Modularize each task in external file~~
-* Add image-min support
+Usage
+-----
+Install and run ```gulp```.

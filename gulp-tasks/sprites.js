@@ -1,14 +1,25 @@
 
 /**
+ * Run spriting
+ */
+
+var sprites = function () {
+
+    gulp.task('sprites', ['create_sprites'], function(){
+        return gulp.start('rename_sprites');
+    });
+};
+
+/**
  * Create sprites CSS file and merge the png files
  *
  * @src png files to be merged
  * @dest sprites CSS file
  */
 
-var sprites = function () {
+var create_sprites = function () {
   
-    gulp.task('sprites', function(){
+    gulp.task('create_sprites', function(){
         return gulp.src(files.src.sprites)
             .pipe(gulpPlugin.compass({
                 css: paths.dist.css,
@@ -19,7 +30,7 @@ var sprites = function () {
             .on('error', function (err) {
                 displayError(err);
             })
-            .pipe(gulpPlugin.notify("Sprites Recompiled"));
+            .pipe(gulpPlugin.notify("Sprites Created"));
     });
 };
 
@@ -42,4 +53,5 @@ var rename_sprites = function () {
 };
 
 module.exports.sprites = sprites;
+module.exports.create_sprites = create_sprites;
 module.exports.rename_sprites = rename_sprites;

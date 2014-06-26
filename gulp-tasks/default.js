@@ -2,12 +2,12 @@
 // Watchers
 
 var watch = function(){
-    gulp.task('watch', function () {
+    gulp.task('default', function () {
         // Build
-        gulp.start('js', 'jsminify', 'scss', 'sprites', 'rename_sprites', 'clean');
+        gulp.start('build');
 
         // SCSS
-        gulp.watch(basePaths.dist + 'src/sass/*.scss', ['scss']).on('change', function (evt) {
+        gulp.watch(basePaths.dist + 'src/sass/**/*.scss', ['scss']).on('change', function (evt) {
             changeEvent(evt)
         });
         ;
@@ -17,7 +17,7 @@ var watch = function(){
         });
         ;
         // JS
-        gulp.watch(basePaths.dist + 'src/js/*.js', ['js', 'jsminify']).on('change', function (evt) {
+        gulp.watch(basePaths.dist + 'src/js/**/*.js', ['js', 'jsminify']).on('change', function (evt) {
             changeEvent(evt)
         });
         ;
