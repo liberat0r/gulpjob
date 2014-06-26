@@ -6,10 +6,11 @@ Front-end web development automation with node, gulp and compass.
 Installation
 --------------
 
-You need to have a node-enabled environment and be able to access the node packet management commands.
+You need to have a node-enabled environment and be able to access the node packet management commands. With npm added to your PATH environmental variables, run either of the following commands:
 
-- Run the install.bat windows batch file
-- With npm added to your PATH environmental variables, run the following commands:
+- ```npm install```
+- ```install.bat``` windows batch file
+- ```npm install gulp --global``` and ```npm install gulp gulp-uglifyjs gulp-compass gulp-concat-sourcemap gulp-autoprefixer gulp-minify-css gulp-notify gulp-rename gulp-clean --save-dev```
 
 ```
 npm install gulp
