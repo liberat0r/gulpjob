@@ -1,5 +1,5 @@
-gulp-automation
-===============
+gulpjob
+=======
 
 Front-end web development automation with node, gulp and compass.
 
