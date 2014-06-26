@@ -12,7 +12,7 @@ You need to have a node-enabled environment and be able to access the node packe
 - ```install.bat``` windows batch file
 - ```npm install gulp --global``` and ```npm install gulp gulp-uglifyjs gulp-compass gulp-concat-sourcemap gulp-autoprefixer gulp-minify-css gulp-notify gulp-rename gulp-clean --save-dev```
 
-If you would like to receive notifications from gulp-notify, you must install snarl.
+If you would like to receive notifications from gulp-notify, you must install [snarl](http://fullphat.net/) or [growl](http://growl.info/)
 
 TODO
 ------
