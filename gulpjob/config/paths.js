@@ -1,7 +1,7 @@
 // Files & Paths
 var basePaths = {
-    main: 'app/webroot/src/',
-    dist: 'app/webroot/',
+    main: './app/webroot/src/',
+    dist: './app/webroot/',
 };
 
 var files = {
