@@ -27,6 +27,7 @@ var displayError = global.displayError = function (error) {
 
 // Register tasks
 require('./tasks/js').js();
+require('./tasks/js').js_hint();
 require('./tasks/js').js_concat();
 require('./tasks/js').js_minify();
 require('./tasks/scss')();

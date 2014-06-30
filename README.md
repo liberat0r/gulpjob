@@ -14,7 +14,7 @@ You need [nodeJS](http://nodejs.org/download/) and [ruby compass](http://compass
 
 - ```npm install```
 - ```install.bat``` windows batch file
-- ```npm install gulp --global``` and ```npm install gulp gulp-uglifyjs gulp-compass gulp-concat-sourcemap gulp-autoprefixer gulp-minify-css gulp-notify gulp-rename gulp-clean --save-dev```
+- ```npm install gulp --global``` and ```npm install gulp gulp-uglifyjs gulp-compass gulp-concat-sourcemap gulp-autoprefixer gulp-minify-css gulp-notify gulp-rename gulp-clean gulp-jshint map-stream --save-dev```
 
 If you would like to receive notifications from gulp-notify, you must install [snarl](http://fullphat.net/) or [growl](http://growl.info/)
 

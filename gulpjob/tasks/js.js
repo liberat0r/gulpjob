@@ -5,8 +5,42 @@
 
 var js = function () {
 
-    gulp.task('js', ['js_concat'], function(){
+    gulp.task('js', ['js_concat', 'js_hint'], function(){
         return gulp.start('js_minify');
+    });
+};
+
+/**
+ * Error reporter
+ *
+ */
+/*
+var jsErrorReporter = map(function (file, cb) {
+
+  if (!file.jshint.success) {
+    console.log('JSHINT fail in '+file.path);
+    file.jshint.results.forEach(function (err) {
+      if (err) {
+        console.log(' '+file.path + ': line ' + err.line + ', col ' + err.character + ', code ' + err.code + ', ' + err.reason);
+      }
+    });
+  }
+  cb(null, file);
+});*/
+
+/**
+ * Show JS errors with notifier
+ *
+ * @src JS files
+ */
+
+var js_hint = function(){
+
+    gulp.task('js_hint', function () {
+        return gulp.src(files.src.js)
+            .pipe(gulpPlugin.jshint())
+			.pipe(jshint.reporter('default'));
+            /*.pipe(myReporter);*/
     });
 };
 
@@ -65,3 +99,4 @@ var js_minify = function(){
 module.exports.js = js;
 module.exports.js_concat = js_concat;
 module.exports.js_minify = js_minify;
+module.exports.js_hint = js_hint;

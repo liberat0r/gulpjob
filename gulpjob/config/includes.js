@@ -1,6 +1,9 @@
 module.exports.gulp = require('gulp');
 
+module.exports.map = require('map-stream');
+
 module.exports.gulpPlugin = {
+	jshint: require('gulp-jshint'),
     uglifyjs: require('gulp-uglifyjs'),
     concat_sourcemap: require('gulp-concat-sourcemap'),
     autoprefixer: require('gulp-autoprefixer'),
