@@ -21,15 +21,16 @@ var create_sprites = function () {
   
     gulp.task('create_sprites', function(){
         return gulp.src(files.src.sprites)
+            .pipe(gulpPlugin.gulpPlumber())
             .pipe(gulpPlugin.compass({
                 css: paths.dist.css,
                 sass: paths.src.scss,
                 image: paths.src.sprites,
                 relative: true,
             }))
-            .on('error', function (err) {
+/*            .on('error', function (err) {
                 displayError(err);
-            })
+            })*/
             .pipe(gulpPlugin.notify("Sprites Created"));
     });
 };
@@ -44,6 +45,7 @@ var rename_sprites = function () {
     
     gulp.task('rename_sprites', function(){
         return gulp.src(files.src.sprites_compiled)
+            .pipe(gulpPlugin.gulpPlumber())
             .pipe(gulpPlugin.rename({
                 basename: 'sprites',
                 extname: '.scss'

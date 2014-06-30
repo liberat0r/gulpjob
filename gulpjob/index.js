@@ -4,10 +4,10 @@ var gulp       = global.gulp        = require('./config/includes').gulp;
 var gulpPlugin = global.gulpPlugin  = require('./config/includes').gulpPlugin;
 
 // Files & Paths
-var basepath = global.basePaths   = require('./config/paths').basePaths;
-var files    = global.files       = require('./config/paths').files;
-var paths    = global.paths       = require('./config/paths').paths;
-
+var basepath    = global.basePaths   = require('./config/paths').basePaths;
+var files       = global.files       = require('./config/paths').files;
+var paths       = global.paths       = require('./config/paths').paths;
+var watchFiles  = global.watchFiles  = require('./config/paths').watchFiles;
 
 var changeEvent = global.changeEvent = function (evt) {
     gulpPlugin.notify( '[watcher] File ' + evt.path + ' was ' + evt.type + ', compiling...');

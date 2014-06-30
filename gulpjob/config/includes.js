@@ -1,7 +1,5 @@
 module.exports.gulp = require('gulp');
 
-module.exports.map = require('map-stream');
-
 module.exports.gulpPlugin = {
 	jshint: require('gulp-jshint'),
     uglifyjs: require('gulp-uglifyjs'),
@@ -13,4 +11,7 @@ module.exports.gulpPlugin = {
     compass: require('gulp-compass'),
     minifyCSS: require('gulp-minify-css'),
 	imagemin: require('gulp-imagemin'),
+    gulpWatch: require('gulp-watch'),
+    gulpPlumber: require('gulp-plumber'),
+    map: require('map-stream'),
 };

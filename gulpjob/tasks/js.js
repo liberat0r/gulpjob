@@ -14,19 +14,20 @@ var js = function () {
  * Error reporter
  *
  */
-/*
-var jsErrorReporter = map(function (file, cb) {
+var jsErrorReporter = gulpPlugin.map(function (file, callback) {
 
-  if (!file.jshint.success) {
-    console.log('JSHINT fail in '+file.path);
-    file.jshint.results.forEach(function (err) {
-      if (err) {
-        console.log(' '+file.path + ': line ' + err.line + ', col ' + err.character + ', code ' + err.code + ', ' + err.reason);
-      }
-    });
-  }
-  cb(null, file);
-});*/
+    /* todo: console logs -> notify */
+    if (!file.jshint.success) {
+        console.log('JSHINT Errors ' + file.path);
+
+        file.jshint.results.forEach(function (err) {
+          if (err) {
+              console.log( 'L:' + err.error.line + ' C:' + err.error.character + ' ' + err.error.raw + ' (' + err.error.evidence + ')');
+          }
+        });
+    }
+    callback(null, file);
+});
 
 /**
  * Show JS errors with notifier
@@ -38,9 +39,11 @@ var js_hint = function(){
 
     gulp.task('js_hint', function () {
         return gulp.src(files.src.js)
+            .pipe(gulpPlugin.gulpPlumber({
+                errorHandler: displayError
+            }))
             .pipe(gulpPlugin.jshint())
-			.pipe(gulpPlugin.jshint.reporter('default'));
-            /*.pipe(myReporter);*/
+            .pipe(jsErrorReporter);
     });
 };
 
@@ -55,12 +58,15 @@ var js_concat = function(){
 
     gulp.task('js_concat', function () {
         return gulp.src(files.src.js)
+            .pipe(gulpPlugin.gulpPlumber({
+                errorHandler: displayError
+            }))
             .pipe(gulpPlugin.concat_sourcemap('scripts.js', {
                 sourceRoot: paths.src.sourcemaps_root
             }))
-            .on('error', function (err) {
+/*            .on('error', function (err) {
                 displayError(err);
-            })
+            })*/
             .pipe(gulp.dest(paths.dist.js))
             .pipe(gulpPlugin.notify({
                 message: "JavaScript Concatenated",
@@ -81,13 +87,16 @@ var js_minify = function(){
 
     gulp.task('js_minify', function () {
         return gulp.src(files.src.compiled_js)
+            .pipe(gulpPlugin.gulpPlumber({
+                errorHandler: displayError
+            }))
             .pipe(gulpPlugin.rename({ suffix: '.min' }))
             .pipe(gulpPlugin.uglifyjs({
                 outSourceMap: 'scripts.min.map'
             }))
-            .on('error', function (err) {
+/*            .on('error', function (err) {
                 displayError(err);
-            })
+            })*/
             .pipe(gulp.dest(paths.dist.js))
             .pipe(gulpPlugin.notify({
                 message: "JavaScript Minified",
