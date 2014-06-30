@@ -1,3 +1,3 @@
-console.log('test');asdsasad;
+console.log('test');
 
 //# sourceMappingURL=scripts.js.map

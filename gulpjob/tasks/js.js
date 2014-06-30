@@ -14,9 +14,9 @@ var js = function () {
  * Error reporter
  *
  */
-var jsErrorReporter = gulpPlugin.map(function (file, callback) {
+/*var jsErrorReporter = gulpPlugin.map(function (file, callback) {
 
-    /* todo: console logs -> notify */
+    *//* todo: console logs -> notify *//*
     if (!file.jshint.success) {
         console.log('JSHINT Errors ' + file.path);
 
@@ -27,7 +27,7 @@ var jsErrorReporter = gulpPlugin.map(function (file, callback) {
         });
     }
     callback(null, file);
-});
+});*/
 
 /**
  * Show JS errors with notifier
@@ -43,7 +43,8 @@ var js_hint = function(){
                 errorHandler: displayError
             }))
             .pipe(gulpPlugin.jshint())
-            .pipe(jsErrorReporter);
+            .pipe(gulpPlugin.jshint.reporter('default'));
+            /*.pipe(jsErrorReporter);*/
     });
 };
 

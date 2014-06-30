@@ -1,7 +1,10 @@
 // Files & Paths
 var basePaths = {
-    main: './app/webroot/src/',
-    dist: './app/webroot/',
+    /* do not add ./ in front of paths below if you want
+    gulp-watch to detect new files that are being created */
+
+    main: 'app/webroot/src/',
+    dist: 'app/webroot/',
 };
 
 var files = {

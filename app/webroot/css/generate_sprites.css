@@ -1,0 +1,11 @@
+/* line 42, icons/*.png */
+.icons-sprite, .icons-icon-1 {
+  background: url('../img/icons-sf085560312.png') no-repeat;
+}
+
+/* line 60, d:/Programs/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-icon-1 {
+  background-position: 0 0;
+  height: 60px;
+  width: 60px;
+}
