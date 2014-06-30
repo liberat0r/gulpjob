@@ -39,7 +39,7 @@ var js_hint = function(){
     gulp.task('js_hint', function () {
         return gulp.src(files.src.js)
             .pipe(gulpPlugin.jshint())
-			.pipe(jshint.reporter('default'));
+			.pipe(gulpPlugin.jshint.reporter('default'));
             /*.pipe(myReporter);*/
     });
 };

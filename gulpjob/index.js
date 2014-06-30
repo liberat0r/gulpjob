@@ -37,6 +37,7 @@ require('./tasks/sprites').rename_sprites();
 require('./tasks/clean')();
 require('./tasks/build').build();
 require('./tasks/build').build_compass();
+require('./tasks/images')();
 
 // watch = default
 require('./tasks/default')();

@@ -9,6 +9,7 @@ var files = {
     clean: basePaths.dist + 'css/generate_sprites.css',
 
     src: {
+	    images: basePaths.dist + '/files/src/**/*',
         compiled_js: basePaths.dist + '/js/scripts.js',
         js: basePaths.main + 'js/**/*.js',
         scss: basePaths.main + 'sass/main.scss',
@@ -27,6 +28,7 @@ var paths = {
     },
 
     dist: {
+	    images: basePaths.dist + 'files',
         js: basePaths.dist + 'js',
         css: basePaths.dist + 'css',
         sprites_scss: basePaths.main + 'sass',

@@ -5,7 +5,7 @@
 
 var build = function () {
 
-	gulp.task('build', ['js', 'build_compass'], function(){
+	gulp.task('build', ['js', 'build_compass', 'image_min'], function(){
 	    return gulp.start('clean');
 	});
 

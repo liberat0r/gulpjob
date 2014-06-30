@@ -12,4 +12,5 @@ module.exports.gulpPlugin = {
     notify: require('gulp-notify'),
     compass: require('gulp-compass'),
     minifyCSS: require('gulp-minify-css'),
+	imagemin: require('gulp-imagemin'),
 };
