@@ -21,7 +21,9 @@ var create_sprites = function () {
   
     gulp.task('create_sprites', function(){
         return gulp.src(files.src.sprites)
-            .pipe(gulpPlugin.gulpPlumber())
+            .pipe(gulpPlugin.gulpPlumber({
+                errorHandler: displayError
+            }))
             .pipe(gulpPlugin.compass({
                 css: paths.dist.css,
                 sass: paths.src.scss,
@@ -45,7 +47,9 @@ var rename_sprites = function () {
     
     gulp.task('rename_sprites', function(){
         return gulp.src(files.src.sprites_compiled)
-            .pipe(gulpPlugin.gulpPlumber())
+            .pipe(gulpPlugin.gulpPlumber({
+                errorHandler: displayError
+            }))
             .pipe(gulpPlugin.rename({
                 basename: 'sprites',
                 extname: '.scss'

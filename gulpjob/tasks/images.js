@@ -7,7 +7,9 @@ var images = function () {
 
 	gulp.task('image_min', function(){
 	    return gulp.src(files.src.images)
-            .pipe(gulpPlugin.gulpPlumber())
+            .pipe(gulpPlugin.gulpPlumber({
+                errorHandler: displayError
+            }))
 		    .pipe(gulpPlugin.imagemin({
 			    progressive: true,
 		    }))
