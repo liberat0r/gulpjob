@@ -13,5 +13,6 @@ module.exports.gulpPlugin = {
 	imagemin: require('gulp-imagemin'),
     gulpWatch: require('gulp-watch'),
     gulpPlumber: require('gulp-plumber'),
+	include: require('gulp-include'),
     map: require('map-stream'),
 };

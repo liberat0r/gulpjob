@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "scripts.js",
+  "sources": [
+    "app/webroot/src/js/main.js"
+  ],
+  "names": [],
+  "mappings": "AAAA",
+  "sourceRoot": "/"
+}

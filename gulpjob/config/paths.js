@@ -14,7 +14,9 @@ var files = {
     src: {
 	    images: basePaths.dist + '/files/src/**/*',
         compiled_js: basePaths.dist + '/js/scripts.js',
-        js: basePaths.main + 'js/**/*.js',
+        js: basePaths.main + 'js/**/!(_*.js)',
+	    /*js: basePaths.main + 'js*/
+	    js_hint: basePaths.main + 'js/*.js',
         scss: basePaths.main + 'scss/main.scss',
         sprites: basePaths.main + 'scss/generate_sprites.scss',
         sprites_compiled: basePaths.dist + 'css/generate_sprites.css',
