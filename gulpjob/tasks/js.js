@@ -38,7 +38,7 @@ var js = function () {
 var js_hint = function(){
 
     gulp.task('js_hint', function () {
-        return gulp.src(files.src.js)
+        return gulp.src(files.src.js_hint)
             .pipe(gulpPlugin.gulpPlumber({
                 errorHandler: displayError
             }))
@@ -62,6 +62,7 @@ var js_concat = function(){
             .pipe(gulpPlugin.gulpPlumber({
                 errorHandler: displayError
             }))
+            .pipe(gulpPlugin.include())
             .pipe(gulpPlugin.concat_sourcemap('scripts.js', {
                 sourceRoot: paths.src.sourcemaps_root
             }))
