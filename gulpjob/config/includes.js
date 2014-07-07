@@ -15,4 +15,5 @@ module.exports.gulpPlugin = {
     gulpPlumber: require('gulp-plumber'),
 	include: require('gulp-include'),
     map: require('map-stream'),
+    browserSync: require('browser-sync')
 };
