@@ -1,4 +1,5 @@
-/* line 1, ../src/sass/_styles.scss */
+/* line 1, ../src/scss/_styles.scss */
 body {
-  background-color: black;
+  background-color: cornflowerblue;
+  color: black;
 }
