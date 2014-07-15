@@ -12,7 +12,7 @@ var files = {
     clean: basePaths.dist + 'css/generate_sprites.css',
 
     src: {
-	    images: basePaths.dist + '/files/src/**/*',
+	    images: basePaths.dist + 'src/files/**/*',
         compiled_js: basePaths.dist + '/js/scripts.js',
         js: basePaths.main + 'js/**/!(_*.js)',
 	    /*js: basePaths.main + 'js*/
