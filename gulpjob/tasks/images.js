@@ -13,7 +13,8 @@ var images = function () {
 		    .pipe(gulpPlugin.imagemin({
 			    	progressive: true,
 				optimizationLevel: 4,
-				use: [gulpPlugin.pngcrush()]
+				use: [gulpPlugin.pngcrush()],
+				interlaced: true
 		    }))
 /*		    .on('error', function (err) {
 			    displayError(err);
