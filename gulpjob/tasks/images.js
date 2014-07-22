@@ -11,16 +11,23 @@ var images = function () {
                 errorHandler: displayError
             }))
 		    .pipe(gulpPlugin.imagemin({
-			    progressive: true,
+			    	progressive: true,
+				optimizationLevel: 4,
+				use: [gulpPlugin.pngcrush()]
 		    }))
 /*		    .on('error', function (err) {
 			    displayError(err);
 		    })*/
-		    .pipe(gulp.dest(paths.dist.images))
+		    .pipe(gulp.dest(paths.dist.images));
+		    /*
+		    
+		    Notify bugs the image minification for some reason, 
+		    so it's removed.
+		    
 		    .pipe(gulpPlugin.notify({
 			    message: "Images Optimized",
 			    onLast: true,
-		    }));
+		    }));*/
 	});
 };
 
