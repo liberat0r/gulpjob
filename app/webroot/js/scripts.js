@@ -1,4 +1,4 @@
-console.log('b4 test');
+console.log('b4');
 
 
 console.log('after');

@@ -21,9 +21,7 @@ var create_sprites = function () {
   
     gulp.task('create_sprites', function(){
         return gulp.src(files.src.sprites)
-            .pipe(gulpPlugin.gulpPlumber({
-                errorHandler: displayError
-            }))
+            .pipe(gulpPlugin.gulpPlumber())
             .pipe(gulpPlugin.compass({
                 css: paths.dist.css,
                 sass: paths.src.scss,
