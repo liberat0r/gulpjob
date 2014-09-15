@@ -7,17 +7,25 @@ var watch = function(){
     	gulpPlugin.browserSync.init([paths.dist.css + '/*.css', paths.dist.js + '/*.js'], {
 		});
 
-        gulpPlugin.gulpWatch({ glob: watchFiles.scss },
-            ['scss']);
+	gulpPlugin.gulpWatch(watchFiles.scss,
+		function(){
+			gulp.start('scss');
+		});
 
-        gulpPlugin.gulpWatch({ glob: watchFiles.sprites },
-            ['sprites']);
+	gulpPlugin.gulpWatch(watchFiles.sprites,
+		function(){
+			gulp.start('sprites');
+		});
 
-/*        gulpPlugin.gulpWatch({ glob: watchFiles.images },
-            ['image_min']);*/
+	gulpPlugin.gulpWatch(watchFiles.js,
+		function(){
+			gulp.start('js');
+		});
 
-        gulpPlugin.gulpWatch({ glob: watchFiles.js },
-            ['js']);
+/*		gulpPlugin.gulpWatch(watchFiles.images,
+		function(){
+			gulp.start('image_min');
+		});*/
 
     });
 };
