@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>test</title>
+	<meta name="viewport" content="user-scalable=no, width=device-width" />
+	<script type="text/javascript" src="phonegap.js"></script>
+	<style>
+		html {
+			background: black;
+			color: white;
+			-webkit-user-select: none; /* to avoid copy paste possibility on html */
+			font-family: Georgia;
+		}
+		@-webkit-keyframes mathafakah {
+			0% { -webkit-transform: scale(1); }
+			50% { -webkit-transform: scale(0.8); }
+			100% { -webkit-transform: scale(1); }
+		}
+		#yeah.shake {
+			-webkit-animation-name: mathafakah;
+			-webkit-animation-duration: 100ms;
+			-webkit-transform-origin: 50% 50%;
+			-webkit-animation-iteration-count: 5;
+			-webkit-animation-timing-function: linear;
+		}
+	</style>
+</head>
+<body style="display: none"><!-- will show app when device is ready -->
+	<h1>test</h1>
+	<ul>
+		<li>qweeqw</li>
+		<li>sdfwqe</li>
+		<li>wer2314we</li>
+	</ul>
+	<h2>click this mathafaka</h2>
+	<img src="img/yeah.jpg" id="yeah" />
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

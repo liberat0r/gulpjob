@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+	xmlns:gap = "http://phonegap.com/ns/1.0"
+	id        = "com.antonis.games.test1"
+	version   = "1.0.0">
+
+	<name>antonis test 1</name>
+
+	<description>a phonegap test</description>
+
+	<author href="http://www.example.com" email="mitsos@papadopoulos.com">mitsos</author>
+
+	<icon src="phonegap-build-images/android/icons/ldpi.png"                  gap:platform="android" gap:density="ldpi" />
+	<icon src="phonegap-build-images/android/icons/mdpi.png"                  gap:platform="android" gap:density="mdpi" />
+	<icon src="phonegap-build-images/android/icons/hdpi.png"                  gap:platform="android" gap:density="hdpi" />
+	<icon src="phonegap-build-images/android/icons/xhdpi.png"                 gap:platform="android" gap:density="xhdpi" />
+
+	<gap:splash src="phonegap-build-images/android/splash/screen-ldpi.9.png"  gap:platform="android" gap:density="ldpi" />
+	<gap:splash src="phonegap-build-images/android/splash/screen-mdpi.9.png"  gap:platform="android" gap:density="mdpi" />
+	<gap:splash src="phonegap-build-images/android/splash/screen-hdpi.9.png"  gap:platform="android" gap:density="hdpi" />
+	<gap:splash src="phonegap-build-images/android/splash/screen-xhdpi.9.png" gap:platform="android" gap:density="xhdpi" />
+
+	<preference name="phonegap-version" value="3.5.0" />
+	<preference name="android-installLocation" value="auto" />
+	
+	<!-- http://docs.build.phonegap.com/en_US/configuring_preferences.md.html -->
+	<preference name="orientation" value="portrait" />
+	<preference name="fullscreen" value="true" />
+
+	<!-- for removing the menu button -->
+	<preference name="android-targetSdkVersion" value="14" />
+	<!--
+	http://developer.android.com/guide/topics/manifest/uses-sdk-element.html
+	http://en.wikipedia.org/wiki/Android_(operating_system)#Market_share
+	API level to 16 (Android 4.1.2)
+	-->
+	
+	<gap:plugin name="org.apache.cordova.vibration" />
+
+	<feature name="http://api.phonegap.com/1.0/network" />
+	<access origin="*" />
+
+	<gap:platform name="android" />
+
+</widget>
