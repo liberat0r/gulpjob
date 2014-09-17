@@ -38,7 +38,7 @@ var js_hint = function() {
 var js_concat = function() {
 
 	gulp.task('js_concat', function() {
-		return gulp.src(files.src.zip)
+		return gulp.src(files.src.js)
 			.pipe(gulpPlugin.gulpPlumber({
 				errorHandler: displayError
 			}))
