@@ -33,7 +33,7 @@ var paths = {
 	dist: {
 		js : basePaths.dist + 'js',
 		css: basePaths.dist + 'css',
-		zip: '/'
+		zip: ''
 	}
 
 };
