@@ -27,6 +27,7 @@ require('./tasks/js').js_hint();
 require('./tasks/js').js_concat();
 require('./tasks/scss')();
 require('./tasks/build').build();
+require('./tasks/build').zip_dist();
 
 // watch = default
 require('./tasks/default')();

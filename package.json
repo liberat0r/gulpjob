@@ -11,6 +11,7 @@
     "gulp-rename": "^1.2.0",
     "gulp-uglifyjs": "^0.4.2",
     "gulp-watch": "^1.0.5",
+    "gulp-zip": "^2.0.2",
     "map-stream": "^0.1.0"
   }
 }

@@ -13,7 +13,12 @@ var files = {
 		compiled_js: basePaths.dist + '/js/scripts.js',
 		js         : basePaths.main + 'js/**/!(_*.js)',
 		js_hint    : basePaths.main + 'js/*.js',
-		scss       : basePaths.main + 'scss/main.scss'
+		scss       : basePaths.main + 'scss/main.scss',
+		zip        : basePaths.dist + '**/*'
+	},
+
+	dist: {
+		zip: 'phonegap.zip'
 	}
 
 };
@@ -27,7 +32,8 @@ var paths = {
 
 	dist: {
 		js : basePaths.dist + 'js',
-		css: basePaths.dist + 'css'
+		css: basePaths.dist + 'css',
+		zip: '/'
 	}
 
 };

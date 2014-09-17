@@ -9,6 +9,7 @@ module.exports.gulpPlugin = {
     gulpWatch: require('gulp-watch'),
     gulpPlumber: require('gulp-plumber'),
 	include: require('gulp-include'),
+	zip: require('gulp-zip'),
     map: require('map-stream'),
     browserSync: require('browser-sync')
 };

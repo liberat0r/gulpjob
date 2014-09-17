@@ -14,7 +14,7 @@ var scss = function() {
 			}))
 			.pipe(gulpPlugin.compass({
 				css : paths.dist.css,
-				sass: paths.src.scss,
+				sass: paths.src.scss
 			}))
 			.pipe(gulp.dest(paths.dist.css))
 			.pipe(gulpPlugin.notify("SCSS Recompiled"));
