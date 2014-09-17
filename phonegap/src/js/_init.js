@@ -2,8 +2,7 @@
 
 	"use strict";
 
-
-// no scrolling in app
+	// no scrolling in app
 	document.ontouchmove = function(e) {
 		e.preventDefault();
 	};

@@ -16,6 +16,9 @@ var watch = function() {
 				gulp.start('js');
 			});
 
+		// init build
+		gulp.start('build');
+
 	});
 };
 

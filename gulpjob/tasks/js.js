@@ -4,29 +4,10 @@
 
 var js = function() {
 
-	gulp.task('js', ['js_concat', 'js_hint'], function() {
-		return gulp.start('js_minify');
+	gulp.task('js', ['js_hint'], function() {
+		return gulp.start('js_concat');
 	});
 };
-
-/**
- * Error reporter
- *
- */
-/*var jsErrorReporter = gulpPlugin.map(function (file, callback) {
-
- *//* todo: console logs -> notify *//*
- if (!file.jshint.success) {
- console.log('JSHINT Errors ' + file.path);
-
- file.jshint.results.forEach(function (err) {
- if (err) {
- console.log( 'L:' + err.error.line + ' C:' + err.error.character + ' ' + err.error.raw + ' (' + err.error.evidence + ')');
- }
- });
- }
- callback(null, file);
- });*/
 
 /**
  * Show JS errors with notifier

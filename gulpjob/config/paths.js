@@ -3,20 +3,18 @@ var basePaths = {
 	/* do not add ./ in front of paths below if you want
 	 gulp-watch to detect new files that are being created */
 
-	main: 'app/webroot/src/',
-	dist: 'app/webroot/',
+	main: 'phonegap/src/',
+	dist: 'phonegap/',
 };
 
 var files = {
-
-	clean: basePaths.dist + 'css/generate_sprites.css',
 
 	src: {
 		compiled_js: basePaths.dist + '/js/scripts.js',
 		js         : basePaths.main + 'js/**/!(_*.js)',
 		js_hint    : basePaths.main + 'js/*.js',
-		scss       : basePaths.main + 'scss/main.scss',
-	},
+		scss       : basePaths.main + 'scss/main.scss'
+	}
 
 };
 
@@ -29,14 +27,14 @@ var paths = {
 
 	dist: {
 		js : basePaths.dist + 'js',
-		css: basePaths.dist + 'css',
-	},
+		css: basePaths.dist + 'css'
+	}
 
 };
 
 var watchFiles = {
 	scss: basePaths.dist + 'src/scss/**/*.scss',
-	js  : basePaths.dist + 'src/js/**/*.js',
+	js  : basePaths.dist + 'src/js/**/*.js'
 }
 
 module.exports.basePaths = basePaths;

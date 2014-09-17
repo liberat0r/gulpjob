@@ -1,0 +1,30 @@
+html {
+	background          : tomato;
+	color               : white;
+	-webkit-user-select : none; /* to avoid copy paste possibility on html */
+	font-family         : Georgia;
+}
+
+
+
+@-webkit-keyframes mathafakah {
+	0% {
+		-webkit-transform : scale(1);
+	}
+	50% {
+		-webkit-transform : scale(0.8);
+	}
+	100% {
+		-webkit-transform : scale(1);
+	}
+}
+
+
+
+#yeah.shake {
+	-webkit-animation-name            : mathafakah;
+	-webkit-animation-duration        : 100ms;
+	-webkit-transform-origin          : 50% 50%;
+	-webkit-animation-iteration-count : 5;
+	-webkit-animation-timing-function : linear;
+}
