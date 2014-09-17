@@ -1,11 +1,11 @@
-gulpjob
+gulpjob--phonegap
 =======
 
-Front-end web development automation with node, gulp and compass.
+Phonegap development automation with node, gulp and compass.
 
 What does it do
 ---------------
-Optimizes __images__, concatenates and minifies __JS__, compiles and compresses __SCSS__, handles __spriting__ with compass, and creates __sourcemaps__ for the above.
+Concatenates __JS__, compiles __SCSS__ with compass, and creates __sourcemaps__ for the above.
 
 Installation
 ------------
@@ -14,7 +14,9 @@ You need [nodeJS](http://nodejs.org/download/) and [ruby compass](http://compass
 
 - ```npm install```
 - ```install.bat``` windows batch file
-- ```npm install gulp --global``` and ```npm install gulp gulp-uglifyjs gulp-compass@1.2.0 gulp-concat-sourcemap gulp-autoprefixer gulp-minify-css gulp-notify gulp-rename gulp-clean gulp-jshint gulp-watch gulp-imagemin imagemin-pngcrush gulp-plumber gulp-include map-stream browser-sync --save-dev```
+- ```npm install gulp --global
+npm install gulp gulp-compass gulp-concat-sourcemap gulp-notify gulp-rename gulp-jshint gulp-watch gulp-plumber gulp-include map-stream browser-sync --save-dev
+gulp -v```
 
 If you would like to receive notifications from gulp-notify, you must install [snarl](http://fullphat.net/) or [growl](http://growl.info/)
 
