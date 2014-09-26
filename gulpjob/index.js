@@ -1,28 +1,31 @@
 "use strict";
 
-var gulp       = global.gulp        = require('./config/includes').gulp;
-var gulpPlugin = global.gulpPlugin  = require('./config/includes').gulpPlugin;
+var gulp = global.gulp = require('./config/includes').gulp;
+var gulpPlugin = global.gulpPlugin = require('./config/includes').gulpPlugin;
 
 // Files & Paths
-var basepath    = global.basePaths   = require('./config/paths').basePaths;
-var files       = global.files       = require('./config/paths').files;
-var paths       = global.paths       = require('./config/paths').paths;
-var watchFiles  = global.watchFiles  = require('./config/paths').watchFiles;
+var basepath = global.basePaths = require('./config/paths').basePaths;
+var files = global.files = require('./config/paths').files;
+var paths = global.paths = require('./config/paths').paths;
+var watchFiles = global.watchFiles = require('./config/paths').watchFiles;
 
-var changeEvent = global.changeEvent = function (evt) {
-    gulpPlugin.notify( '[watcher] File ' + evt.path + ' was ' + evt.type + ', compiling...');
+var changeEvent = global.changeEvent = function(evt) {
+	gulpPlugin.notify('[watcher] File ' + evt.path + ' was ' + evt.type + ', compiling...');
 };
 
-var displayError = global.displayError = function (error) {
-    var errorString = '[' + error.plugin + ']';
+var displayError = global.displayError = function(error) {
+	var errorString = '[' + error.plugin + ']';
 
-    errorString += ' ' + error.message.replace("\n", '');
-    if (error.fileName)
-        errorString += ' in ' + error.fileName;
-    if (error.lineNumber)
-        errorString += ' on line ' + error.lineNumber + '.';
+	errorString += ' ' + error.message.replace("\n", '');
+	if (error.fileName)
+		errorString += ' in ' + error.fileName;
+	if (error.lineNumber)
+		errorString += ' on line ' + error.lineNumber + '.';
 
-    gulpPlugin.notify(errorString)
+	gulpPlugin.notify({
+		title  : "Gulp Error",
+		message: errorString
+	});
 };
 
 // Register tasks
