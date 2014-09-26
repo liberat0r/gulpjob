@@ -13,7 +13,6 @@
     "gulp-notify": "^1.8.0",
     "gulp-plumber": "^0.6.5",
     "gulp-rename": "^1.2.0",
-    "gulp-rimraf": "^0.1.0",
     "gulp-uglifyjs": "^0.4.3",
     "gulp-watch": "^1.0.7",
     "imagemin-pngcrush": "^1.0.0",
