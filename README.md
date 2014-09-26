@@ -10,11 +10,9 @@ Optimizes __images__, concatenates and minifies __JS__, compiles and compresses 
 Installation
 ------------
 
-You need [nodeJS](http://nodejs.org/download/) and [ruby compass](http://compass-style.org/install/). With npm added to your PATH environmental variables, run either of the following commands:
+You need [nodeJS](http://nodejs.org/download/) and [ruby compass](http://compass-style.org/install/). With npm added to your PATH environmental variables, the following command:
 
 - ```npm install```
-- ```install.bat``` windows batch file
-- ```npm install gulp --global``` and ```npm install gulp gulp-uglifyjs gulp-compass@1.2.0 gulp-concat-sourcemap gulp-autoprefixer gulp-minify-css gulp-notify gulp-rename gulp-clean gulp-jshint gulp-watch gulp-imagemin imagemin-pngcrush gulp-plumber gulp-include map-stream browser-sync --save-dev```
 
 If you would like to receive notifications from gulp-notify, you must install [snarl](http://fullphat.net/) or [growl](http://growl.info/)
 
