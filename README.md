@@ -5,7 +5,7 @@ Front-end web development automation with node, gulp and compass.
 
 What does it do
 ---------------
-Optimizes __images__, concatenates and minifies __JS__, compiles and compresses __SCSS__, handles __spriting__ with compass, and creates __sourcemaps__ for the above.
+Optimizes __images__, concatenates and minifies __JS__, compiles and compresses __SCSS__ with libsass and handles __spriting__ with compass.
 
 Installation
 ------------
