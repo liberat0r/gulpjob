@@ -14,8 +14,6 @@ You need [nodeJS](http://nodejs.org/download/) and [ruby compass](http://compass
 
 - ```npm install```
 
-If you would like to receive notifications from gulp-notify, you must install [snarl](http://fullphat.net/) or [growl](http://growl.info/)
-
 Usage
 -----
 Install and run ```gulp```.
