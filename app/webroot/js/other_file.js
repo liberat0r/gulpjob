@@ -1,0 +1,3 @@
+alert();
+
+console.log( true);

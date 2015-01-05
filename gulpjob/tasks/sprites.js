@@ -49,7 +49,7 @@ var rename_sprites = function () {
                 errorHandler: displayError
             }))
             .pipe(gulpPlugin.rename({
-                basename: 'sprites',
+                basename: '_sprites',
                 extname: '.scss'
             }))
             .pipe(gulp.dest(paths.dist.sprites_scss));

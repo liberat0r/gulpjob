@@ -42,9 +42,9 @@ var js_concat = function() {
 				errorHandler: displayError
 			}))
 			.pipe(gulpPlugin.include())
-			.pipe(gulpPlugin.concat_sourcemap('scripts.js', {
-				sourceRoot: paths.src.sourcemaps_root
-			}))
+			//.pipe(gulpPlugin.concat_sourcemap('scripts.js', {
+			//	sourceRoot: paths.src.sourcemaps_root
+			//}))
 			.pipe(gulp.dest(paths.dist.js))
 			.pipe(gulpPlugin.notify({
 				message: "JavaScript Concatenated",
@@ -68,10 +68,8 @@ var js_minify = function() {
 			.pipe(gulpPlugin.gulpPlumber({
 				errorHandler: displayError
 			}))
-			.pipe(gulpPlugin.rename({ suffix: '.min' }))
-			.pipe(gulpPlugin.uglifyjs({
-				outSourceMap: 'scripts.min.map'
-			}))
+			.pipe(gulpPlugin.rename({suffix: '.min'}))
+			.pipe(gulpPlugin.uglify())
 			.pipe(gulp.dest(paths.dist.js))
 			.pipe(gulpPlugin.notify({
 				message: "JavaScript Minified",
