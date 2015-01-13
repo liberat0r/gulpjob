@@ -1,3 +1,3 @@
-alert();
+console.log('other');
 
-console.log( true);
+console.log('file');
