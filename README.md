@@ -23,11 +23,13 @@ src
 │   ├── _vendor
 │   │   └── [vendor js files...]
 │   ├── scripts.js (included and contactenated scripts)
-│   └── _single-script.js (a single script file)
+│   ├── _included.js (included in the file above with gulp-include)
+│   └── single-script.js (a single script file)
 └── scss
     ├── _vendor
     │   └── [vendor scss files...]
     ├── styles.scss (included and contactenated styles)
+    ├── _included.scss (included in the file above with sass @import)
     └── single-style.scss (a single style file)
 ```
 
