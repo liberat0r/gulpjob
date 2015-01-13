@@ -14,6 +14,23 @@ You need [nodeJS](http://nodejs.org/download/) and [ruby compass](http://compass
 
 - ```npm install```
 
+Example File Structure
+----------------------
+
+```
+src
+├── js
+│   ├── _vendor
+│   │   └── [vendor js files...]
+│   ├── scripts.js (included and contactenated scripts)
+│   └── _single-script.js (a single script file)
+└── scss
+    ├── _vendor
+    │   └── [vendor scss files...]
+    ├── styles.scss (included and contactenated styles)
+    └── single-style.scss (a single style file)
+```
+
 Usage
 -----
 Install and run ```gulp```.
